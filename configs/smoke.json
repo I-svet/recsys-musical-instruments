@@ -1,0 +1,58 @@
+{
+  "protocol": "global-time-train-5core-v1",
+  "k": 10,
+  "threads": 4,
+  "batch_size": 128,
+  "patience": 5,
+  "tuning_seed": 42,
+  "seeds": [
+    42
+  ],
+  "bootstrap_seed": 2026,
+  "bootstrap_replicates": 2000,
+  "ablations": false,
+  "search": {
+    "popular": [
+      {}
+    ],
+    "knn": [
+      {
+        "k": 20,
+        "gamma": 0
+      }
+    ],
+    "als": [
+      {
+        "rank": 32,
+        "reg": 10,
+        "bias_reg": 10,
+        "epochs": 2
+      }
+    ],
+    "ease": [
+      {
+        "reg": 1
+      }
+    ],
+    "fm": [
+      {
+        "rank": 32,
+        "lr": 0.005,
+        "reg": 0.0001,
+        "epochs": 2,
+        "batch_size": 4096
+      }
+    ],
+    "timesvd": [
+      {
+        "rank": 32,
+        "lr": 0.005,
+        "reg": 0.0001,
+        "temporal_reg": 0.001,
+        "epochs": 2,
+        "bin_days": 90,
+        "batch_size": 4096
+      }
+    ]
+  }
+}
