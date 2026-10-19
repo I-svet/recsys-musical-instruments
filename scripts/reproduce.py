@@ -7,7 +7,7 @@ import sys
 parser = argparse.ArgumentParser()
 parser.add_argument("--config", default="configs/benchmark.json")
 parser.add_argument("--output", default="artifacts/benchmark")
-parser.add_argument("--report", default="reports")
+parser.add_argument("--report", default="reports-local")
 parser.add_argument("--skip-metadata", action="store_true")
 args = parser.parse_args()
 root = Path(__file__).resolve().parents[1]
@@ -20,3 +20,7 @@ if not args.skip_metadata:
     run("metadata")
 run("run", "--config", args.config, "--output", args.output)
 run("report", "--runs", args.output, "--output", args.report)
+subprocess.run([sys.executable, str(root / "scripts/plot_tradeoff.py"), args.report],
+               cwd=root, check=True)
+subprocess.run([sys.executable, str(root / "scripts/verify_report.py"), args.report],
+               cwd=root, check=True)

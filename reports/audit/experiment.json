@@ -1,0 +1,766 @@
+{
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "config": {
+    "protocol": "global-time-train-5core-v1",
+    "k": 10,
+    "threads": 4,
+    "batch_size": 128,
+    "patience": 5,
+    "tuning_seed": 42,
+    "seeds": [
+      17,
+      42,
+      2026
+    ],
+    "bootstrap_seed": 2026,
+    "bootstrap_replicates": 2000,
+    "ablations": true,
+    "search": {
+      "popular": [
+        {}
+      ],
+      "knn": [
+        {
+          "k": 20,
+          "gamma": 0
+        },
+        {
+          "k": 20,
+          "gamma": 10
+        },
+        {
+          "k": 20,
+          "gamma": 50
+        },
+        {
+          "k": 20,
+          "gamma": 100
+        },
+        {
+          "k": 50,
+          "gamma": 0
+        },
+        {
+          "k": 50,
+          "gamma": 10
+        },
+        {
+          "k": 50,
+          "gamma": 50
+        },
+        {
+          "k": 50,
+          "gamma": 100
+        },
+        {
+          "k": 100,
+          "gamma": 0
+        },
+        {
+          "k": 100,
+          "gamma": 10
+        },
+        {
+          "k": 100,
+          "gamma": 50
+        },
+        {
+          "k": 100,
+          "gamma": 100
+        },
+        {
+          "k": 200,
+          "gamma": 0
+        },
+        {
+          "k": 200,
+          "gamma": 10
+        },
+        {
+          "k": 200,
+          "gamma": 50
+        },
+        {
+          "k": 200,
+          "gamma": 100
+        }
+      ],
+      "als": [
+        {
+          "rank": 32,
+          "reg": 10,
+          "bias_reg": 10,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 0.18964351378165806,
+          "bias_reg": 63.880795579977914,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 0.5812727788733253,
+          "bias_reg": 0.010236214181119512,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.2458280334270931,
+          "bias_reg": 99.00034984050052,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.6757579947367374,
+          "bias_reg": 32.055255285591144,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 1.6511865103642018,
+          "bias_reg": 29.43751400209291,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 50.691189288884445,
+          "bias_reg": 0.8255813314880652,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 3.0848835992852086,
+          "bias_reg": 0.7588593502644122,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 0.40580862146362023,
+          "bias_reg": 98.37143321930529,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 0.013565539016589736,
+          "bias_reg": 4.193443915443824,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 1.1093462626001058,
+          "bias_reg": 20.169449345693057,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 7.346387132242643,
+          "bias_reg": 70.61198153818842,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.3023535662717986,
+          "bias_reg": 0.060026972725840816,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 14.965196416069746,
+          "bias_reg": 0.09802806854251682,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 7.618869476838435,
+          "bias_reg": 0.03463046720412469,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 13.606669400388308,
+          "bias_reg": 45.71561490818504,
+          "epochs": 40
+        }
+      ],
+      "ease": [
+        {
+          "reg": 1
+        },
+        {
+          "reg": 3
+        },
+        {
+          "reg": 10
+        },
+        {
+          "reg": 30
+        },
+        {
+          "reg": 100
+        },
+        {
+          "reg": 300
+        },
+        {
+          "reg": 1000
+        },
+        {
+          "reg": 3000
+        }
+      ],
+      "fm": [
+        {
+          "rank": 32,
+          "lr": 0.005,
+          "reg": 0.0001,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0052480888049872285,
+          "reg": 3.2597496887736745e-06,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.00016652256321245668,
+          "reg": 0.012128490832219785,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.004076353156032138,
+          "reg": 0.09960488079455578,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.00270913532977755,
+          "reg": 3.507466410791727e-05,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0010297160863280612,
+          "reg": 0.005632924778250233,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.004077052349708586,
+          "reg": 0.0007543644302930306,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.005869651259981634,
+          "reg": 0.017706953225300675,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.003977443373209451,
+          "reg": 0.00032321987904800065,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.008343387692416908,
+          "reg": 0.010416808879087164,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0013051968308529572,
+          "reg": 0.03438199801852155,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0008050843954261885,
+          "reg": 0.0670410823915503,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0001962082928871104,
+          "reg": 0.038229928782113995,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.00012283387498162934,
+          "reg": 0.0005398126893043736,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.000883012918103241,
+          "reg": 4.529824738713253e-06,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0010361050333746603,
+          "reg": 8.954400964428115e-05,
+          "epochs": 50,
+          "batch_size": 4096
+        }
+      ],
+      "timesvd": [
+        {
+          "rank": 32,
+          "lr": 0.005,
+          "reg": 0.0001,
+          "temporal_reg": 0.001,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0017497186056901403,
+          "reg": 1.3074430577343114e-05,
+          "temporal_reg": 0.00012678701610728397,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0009562544530735541,
+          "reg": 0.00017712267512696916,
+          "temporal_reg": 0.00017712267512696916,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.002793984223488632,
+          "reg": 0.00036977515956754015,
+          "temporal_reg": 0.00036977515956754015,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0005334386324187579,
+          "reg": 0.017336896211339926,
+          "temporal_reg": 0.017336896211339926,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0006256001349075279,
+          "reg": 0.0010019042871247778,
+          "temporal_reg": 0.0010019042871247778,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.00842268413717684,
+          "reg": 0.006747324783625084,
+          "temporal_reg": 0.006747324783625084,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0008195825277594868,
+          "reg": 4.074424417636997e-06,
+          "temporal_reg": 0.00022234644084417632,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0007347399647606316,
+          "reg": 0.0002480073376480185,
+          "temporal_reg": 0.0002480073376480185,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.006966577033939481,
+          "reg": 0.04313090182064109,
+          "temporal_reg": 0.04313090182064109,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0008228319684859747,
+          "reg": 0.01435537730879805,
+          "temporal_reg": 0.01435537730879805,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0009084321552522529,
+          "reg": 0.06860233901445678,
+          "temporal_reg": 0.06860233901445678,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0014497061607491525,
+          "reg": 2.8896360439808093e-06,
+          "temporal_reg": 0.04580276521964759,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0005182046002432777,
+          "reg": 2.201314999305449e-05,
+          "temporal_reg": 2.201314999305449e-05,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0010219809035595115,
+          "reg": 0.0009787732312980292,
+          "temporal_reg": 0.0009787732312980292,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.0005649530690262978,
+          "reg": 5.529444366780938e-06,
+          "temporal_reg": 0.06224758489300692,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        }
+      ]
+    }
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "logical_cpus": 14,
+    "ram_gib": 31.5,
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "2.3.3",
+      "torch": "2.14.1+cpu",
+      "matplotlib": "3.11.2",
+      "psutil": "7.2.2",
+      "threadpoolctl": "3.7.0"
+    },
+    "git_commit": "102cc18bc6f499abed5e19431a30c246bf70609d",
+    "git_dirty": false,
+    "code_sha256": "a129adf4f8fbeea221ae1761cff534375c8b525cd8d3b98ae934b962e63e8ed3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "libiomp",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "version": null
+      }
+    ],
+    "device": "cpu"
+  },
+  "data": {
+    "schema_version": 1,
+    "source": {
+      "name": "Musical_Instruments.csv",
+      "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/categoryFilesSmall/Musical_Instruments.csv",
+      "bytes": 63130088,
+      "sha256": "8933b17434e4984bcce8cf4ec43d847e0af6aa6d46add28bbb37b80e06da1b06"
+    },
+    "protocol": {
+      "validation_start": 1492387200,
+      "test_start": 1512691200,
+      "intervals": "train < validation_start; validation_start <= validation < test_start; test >= test_start",
+      "cutoff_origin": "fixed UTC day boundaries pre-registered by full-data 0.8/0.9 lower-quantile audit",
+      "core_k": 5,
+      "core_source": "train_only",
+      "positive_rating_threshold": 4,
+      "deduplication": "earliest timestamp then source row for each user-item pair",
+      "id_order": "lexicographic external IDs"
+    },
+    "cleaning": {
+      "raw_rows": 1512530,
+      "invalid_rows": 0,
+      "duplicate_pair_rows_removed": 41966,
+      "clean_rows": 1470564
+    },
+    "n_users": 17702,
+    "n_items": 7329,
+    "total_interactions": 153324,
+    "meets_assignment_requirements": true,
+    "splits": {
+      "train": {
+        "rows": 144036,
+        "users": 17702,
+        "items": 7329,
+        "positive_rows": 125702,
+        "positive_users": 17667
+      },
+      "validation": {
+        "rows": 5547,
+        "users": 2613,
+        "items": 2551,
+        "positive_rows": 4710,
+        "positive_users": 2330
+      },
+      "test": {
+        "rows": 3741,
+        "users": 1985,
+        "items": 1938,
+        "positive_rows": 3094,
+        "positive_users": 1702
+      }
+    },
+    "raw_splits": {
+      "train": {
+        "rows": 1176642,
+        "users": 730375,
+        "items": 103854,
+        "positive_rows": 955659,
+        "positive_users": 599231
+      },
+      "validation": {
+        "rows": 147333,
+        "users": 108030,
+        "items": 30946,
+        "positive_rows": 116880,
+        "positive_users": 85687
+      },
+      "test": {
+        "rows": 146589,
+        "users": 111255,
+        "items": 28777,
+        "positive_rows": 115440,
+        "positive_users": 87674
+      }
+    },
+    "core_trace": [
+      {
+        "rows": 228210,
+        "users": 29982,
+        "items": 25874,
+        "positive_rows": 196496,
+        "positive_users": 29841
+      },
+      {
+        "rows": 179637,
+        "users": 25159,
+        "items": 9810,
+        "positive_rows": 155971,
+        "positive_users": 25027
+      },
+      {
+        "rows": 156844,
+        "users": 19425,
+        "items": 8991,
+        "positive_rows": 136558,
+        "positive_users": 19381
+      },
+      {
+        "rows": 150579,
+        "users": 18940,
+        "items": 7766,
+        "positive_rows": 131250,
+        "positive_users": 18890
+      },
+      {
+        "rows": 146697,
+        "users": 18054,
+        "items": 7650,
+        "positive_rows": 127964,
+        "positive_users": 18017
+      },
+      {
+        "rows": 145487,
+        "users": 17961,
+        "items": 7435,
+        "positive_rows": 126928,
+        "positive_users": 17924
+      },
+      {
+        "rows": 144711,
+        "users": 17797,
+        "items": 7404,
+        "positive_rows": 126264,
+        "positive_users": 17761
+      },
+      {
+        "rows": 144478,
+        "users": 17775,
+        "items": 7367,
+        "positive_rows": 126070,
+        "positive_users": 17739
+      },
+      {
+        "rows": 144311,
+        "users": 17738,
+        "items": 7362,
+        "positive_rows": 125932,
+        "positive_users": 17702
+      },
+      {
+        "rows": 144215,
+        "users": 17734,
+        "items": 7342,
+        "positive_rows": 125850,
+        "positive_users": 17698
+      },
+      {
+        "rows": 144128,
+        "users": 17714,
+        "items": 7340,
+        "positive_rows": 125766,
+        "positive_users": 17678
+      },
+      {
+        "rows": 144088,
+        "users": 17710,
+        "items": 7334,
+        "positive_rows": 125733,
+        "positive_users": 17674
+      },
+      {
+        "rows": 144068,
+        "users": 17707,
+        "items": 7332,
+        "positive_rows": 125722,
+        "positive_users": 17671
+      },
+      {
+        "rows": 144052,
+        "users": 17704,
+        "items": 7331,
+        "positive_rows": 125714,
+        "positive_users": 17669
+      },
+      {
+        "rows": 144040,
+        "users": 17703,
+        "items": 7329,
+        "positive_rows": 125705,
+        "positive_users": 17668
+      },
+      {
+        "rows": 144036,
+        "users": 17702,
+        "items": 7329,
+        "positive_rows": 125702,
+        "positive_users": 17667
+      },
+      {
+        "rows": 144036,
+        "users": 17702,
+        "items": 7329,
+        "positive_rows": 125702,
+        "positive_users": 17667
+      }
+    ],
+    "exclusions": {
+      "validation": {
+        "outside_user_cohort_rows": 138234,
+        "outside_item_cohort_rows": 64718,
+        "outside_either_cohort_rows": 141786,
+        "selected_users_all_catalog_events": {
+          "rows": 9099,
+          "users": 3453,
+          "items": 5688,
+          "positive_rows": 7707,
+          "positive_users": 3127
+        },
+        "selected_users_outside_catalog_positive_rows": 2997,
+        "selected_users_positive_only_outside_catalog": 797,
+        "positive_event_catalog_coverage": 0.6111327364733359
+      },
+      "test": {
+        "outside_user_cohort_rows": 140063,
+        "outside_item_cohort_rows": 68512,
+        "outside_either_cohort_rows": 142848,
+        "selected_users_all_catalog_events": {
+          "rows": 6526,
+          "users": 2851,
+          "items": 4359,
+          "positive_rows": 5393,
+          "positive_users": 2493
+        },
+        "selected_users_outside_catalog_positive_rows": 2299,
+        "selected_users_positive_only_outside_catalog": 791,
+        "positive_event_catalog_coverage": 0.5737066567773039
+      }
+    },
+    "exclusions_note": "outside cohort does not necessarily mean temporally unseen/cold",
+    "files": {
+      "users.json": "85a61f2d7b315f99a91e337e6801321d2fb3b96751e7f5f219e867bd34a75af5",
+      "items.json": "5f17bb0a5f42f69d20bbea727b770127ae165a71cc7c459ceaaae84999b351a9",
+      "allfuture_counts.csv": "09664d8d60a010102bc56ef62bba60f8af7e8557ed1ec1c2c3fae3cebd7d3a37",
+      "train.csv": "20bfe08c0426f0a636bc1212f6afdcfe8a96182dece476396c5682cd3c620db1",
+      "validation.csv": "444a67edf7a8ec3b82dbabe9e789718037716d3b692715230bd02f4952b1235a",
+      "test.csv": "89016c9e00d5d428347b148314003b4e525cfd811ce3be8ba5e5857dbfe8aec7"
+    }
+  }
+}

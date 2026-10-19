@@ -1,0 +1,75 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "fm",
+  "seed": 17,
+  "parameters": {
+    "rank": 16,
+    "lr": 0.00016652256321245668,
+    "reg": 0.012128490832219785,
+    "epochs": 5,
+    "batch_size": 4096
+  },
+  "validation": {
+    "ndcg@10": 0.01778719369026187,
+    "recall@10": 0.02485517343886443,
+    "precision@10": 0.008969957081545063,
+    "map@10": 0.012561495163158253,
+    "recall_all_future@10": 0.016944691164811343,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.003274662300450266,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 913.224635193133
+  },
+  "metrics": {
+    "ndcg@10": 0.013679089165439863,
+    "recall@10": 0.019693082736560997,
+    "precision@10": 0.0068155111633372515,
+    "map@10": 0.009803491379578338,
+    "recall_all_future@10": 0.012272629540980923,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.003138218037931505,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 898.7461222091657,
+    "rmse": 1.1049253147873173
+  },
+  "fit_seconds": 4.122384399990551,
+  "test_seconds": 1.0410353999468498,
+  "peak_rss_mib": 457.734375,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [],
+  "training_history": [
+    {
+      "epoch": 1,
+      "mse": 0.91139460299342
+    },
+    {
+      "epoch": 2,
+      "mse": 0.9023392071544338
+    },
+    {
+      "epoch": 3,
+      "mse": 0.8924525802072653
+    },
+    {
+      "epoch": 4,
+      "mse": 0.8816881221581395
+    },
+    {
+      "epoch": 5,
+      "mse": 0.8703059831699576
+    }
+  ],
+  "files": {
+    "model.pkl": "544e908df172d2bd1859ca320879ea1aa0ee3f58ea9f9f1bcf25b58e722d1fb1",
+    "per_user.csv": "b813081baa5f3bccca53eec04debdfaee06e55897c4c5a264393d2e55817e75c",
+    "recommendations.csv": "4bc93166c5ccd258ff19a08594c83e5539d136f5447bd3fe771374564c1d42e7"
+  }
+}

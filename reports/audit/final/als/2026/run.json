@@ -1,0 +1,64 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "als",
+  "seed": 2026,
+  "parameters": {
+    "rank": 64,
+    "reg": 7.346387132242643,
+    "bias_reg": 70.61198153818842,
+    "epochs": 9
+  },
+  "validation": {
+    "ndcg@10": 0.014310742101118268,
+    "recall@10": 0.021904018728053063,
+    "precision@10": 0.006266094420600859,
+    "map@10": 0.009442267703457158,
+    "recall_all_future@10": 0.014801520921604068,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.04038750170555328,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 466.33141630901287
+  },
+  "metrics": {
+    "ndcg@10": 0.00841887135273281,
+    "recall@10": 0.012156184982271938,
+    "precision@10": 0.0031727379553466513,
+    "map@10": 0.0058993698667611704,
+    "recall_all_future@10": 0.007212557799200397,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.04284349843089098,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 474.76551116333724,
+    "rmse": 1.1003736813650524
+  },
+  "fit_seconds": 23.686868400021922,
+  "test_seconds": 1.1869596999604255,
+  "peak_rss_mib": 595.44140625,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [
+    138704.3399465309,
+    128068.92783427639,
+    122108.22133934137,
+    118037.61682176123,
+    116031.23679424735,
+    115150.11173777057,
+    114746.30714093494,
+    114541.48746266583,
+    114422.58904613915,
+    114344.54066151008
+  ],
+  "training_history": [],
+  "files": {
+    "model.pkl": "2b137056d808a7e3aaf4d678d8ab25af456b87b404293693d5c0f7db76fdd8e6",
+    "per_user.csv": "a5cc5ff158d719186a39be600f4f00b5b217dbb88b77cd938390c8f3345dcf3e",
+    "recommendations.csv": "5138bbace271696b6caff652f8805ba3f60935946bb28ed50e41321654c69b6f"
+  }
+}

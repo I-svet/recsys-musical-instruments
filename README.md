@@ -5,10 +5,14 @@
 Обучение, предсказания, отбор кандидатов и метрики находятся в этом репозитории. NumPy/SciPy используются для линейной алгебры, PyTorch для тензоров, autograd и Adam. Готовых рекомендательных моделей и обучаемых алгоритмов sklearn здесь нет.
 
 - [Результаты, графики и примеры рекомендаций](reports/REPORT.md)
+- [Обсуждение результатов и ограничений](docs/RESULTS_DISCUSSION.md)
+- [Проверка воспроизводимости](docs/VERIFICATION.md)
 - [Системный дизайн, формулы и источники](docs/SYSTEM_DESIGN.md)
 - [Конфигурации полного эксперимента](configs/benchmark.json)
 - [Исходный аудит данных](research/ratings_audit.json)
 - [Состояние реализации](docs/IMPLEMENTATION_PLAN.md)
+
+Полный эксперимент завершён: 73 конфигурации на validation и 18 финальных прогонов. EASE получил наибольшие NDCG@10 = 0,01411 и Recall@10 = 0,02507. Это описательный результат данного сравнения; доказанного превосходства над всеми моделями он не означает. ItemKNN охватывает 32,16% каталога, EASE — 14,27%, FM — 0,33%. Локально и в CI на Windows/Linux прошли 78 тестов.
 
 ## Данные
 
@@ -54,7 +58,7 @@ python -m pytest -q
 python scripts/reproduce.py
 ```
 
-Последняя команда скачивает данные, готовит выборку, выполняет pilot/search/refit и строит отчёт. Raw-данные и веса моделей исключены из Git. Промежуточные результаты: `artifacts/benchmark`; публичный отчёт: `reports`.
+Последняя команда скачивает данные, готовит выборку, выполняет pilot/search/refit и строит отчёт. Raw-данные и веса моделей исключены из Git. Промежуточные результаты: `artifacts/benchmark`; ваш повторный отчёт: `reports-local`. Опубликованный эталон находится в `reports` и сохраняется при воспроизведении.
 
 Поэтапный запуск:
 
@@ -65,7 +69,9 @@ python -m recsys metadata
 python -m recsys run --stage pilot
 python -m recsys run --stage tune
 python -m recsys run --stage final
-python -m recsys report
+python -m recsys report --output reports-local
+python scripts/plot_tradeoff.py reports-local
+python scripts/verify_report.py reports-local
 ```
 
 Короткая проверка всего конвейера на той же выборке:
@@ -75,6 +81,12 @@ python scripts/reproduce.py --config configs/smoke.json --output artifacts/smoke
 ```
 
 Smoke выполняет одну конфигурацию и до двух эпох. Его метрики не заменяют полный эксперимент.
+
+Проверка контрольных сумм опубликованного отчёта без скачивания датасета и установки пакетов:
+
+```bash
+python scripts/verify_report.py reports
+```
 
 Повторный запуск пропускает только завершённые совместимые этапы. Изменение данных, исходного кода, окружения или конфигурации требует нового `--output`; повреждённые файлы отвергаются. Поиск создан `scripts/make_configs.py` с seed 2026 до основного эксперимента: 16 KNN, 8 EASE и по 16 ALS/FM/timeSVD++; ALS до 40 итераций, FM/timeSVD++ до 50 эпох, patience 5. Для каждого факторного метода заданы один опорный набор и 15 случайных. Абляции используют параметры основной модели и собственный validation early stopping; это отключение компонента при фиксированных настройках, а не отдельный полный поиск.
 

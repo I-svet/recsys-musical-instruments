@@ -1,0 +1,33 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "ease",
+  "parameters": {
+    "reg": 300
+  },
+  "seed": 42,
+  "best_epoch": 1,
+  "validation": {
+    "ndcg@10": 0.01955636707091235,
+    "recall@10": 0.03547889312642531,
+    "precision@10": 0.0068669527896995704,
+    "map@10": 0.011150288393850625,
+    "recall_all_future@10": 0.022174647176330307,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.21080638559148587,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0008583690987124463,
+    "mean_recommended_popularity@10": 291.4582832618026
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "ndcg": 0.01955636707091235
+    }
+  ],
+  "fit_seconds": 15.796931000018958,
+  "validation_seconds": 11.834334900020622,
+  "peak_rss_mib": 1266.3515625
+}

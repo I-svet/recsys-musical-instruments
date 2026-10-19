@@ -1,0 +1,81 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "svdpp",
+  "seed": 42,
+  "parameters": {
+    "rank": 16,
+    "lr": 0.0005649530690262978,
+    "reg": 5.529444366780938e-06,
+    "temporal_reg": 0.06224758489300692,
+    "epochs": 6,
+    "bin_days": 90,
+    "batch_size": 4096
+  },
+  "validation": {
+    "ndcg@10": 0.01418469220147647,
+    "recall@10": 0.018745409335538088,
+    "precision@10": 0.007339055793991417,
+    "map@10": 0.009938299449488904,
+    "recall_all_future@10": 0.012742739898581212,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.010642652476463364,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 700.1531759656652
+  },
+  "metrics": {
+    "ndcg@10": 0.009787710025719681,
+    "recall@10": 0.014424347033042685,
+    "precision@10": 0.004582843713278495,
+    "map@10": 0.006532959867587198,
+    "recall_all_future@10": 0.008555444867117552,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.010779096738982126,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 685.2592831962397,
+    "rmse": 1.121953913362754
+  },
+  "fit_seconds": 2.6811249000020325,
+  "test_seconds": 1.0013300999999046,
+  "peak_rss_mib": 438.0,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [],
+  "training_history": [
+    {
+      "epoch": 1,
+      "mse": 0.913809048695789
+    },
+    {
+      "epoch": 2,
+      "mse": 0.9064621870520265
+    },
+    {
+      "epoch": 3,
+      "mse": 0.8991459989288244
+    },
+    {
+      "epoch": 4,
+      "mse": 0.8911803712679595
+    },
+    {
+      "epoch": 5,
+      "mse": 0.8820674694484272
+    },
+    {
+      "epoch": 6,
+      "mse": 0.8714586188565367
+    }
+  ],
+  "files": {
+    "model.pkl": "6019c9849950898d81d3705f06cd00848cab0d67ac58f202e57901d72aeb07d8",
+    "per_user.csv": "b100a1c68e4fc1289fee6dd56088195ac978ac7b4d56dfb792e7511a36fe30b3",
+    "recommendations.csv": "d5760d9b89d3197fb61d12492dabe760349c6251bf31d24e70f50a3207df7499"
+  }
+}
