@@ -1,0 +1,9 @@
+{
+  "source_rows": 120310,
+  "catalog_items": 7329,
+  "matched_items": 7324,
+  "title_items": 7324,
+  "source_sha256": "8e3f0dbe4c6c1aa5b32d350aa26072232beb6160ff3c5dadb44bca2c473a8b41",
+  "file_sha256": "215bc76561941d90ec3a3501d5f3930facebc6c7dc5eee5930cdc7b1985dc59b",
+  "use": "Report labels only. Snapshot metadata are not historical training features."
+}

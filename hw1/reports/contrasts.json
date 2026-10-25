@@ -1,0 +1,38 @@
+[
+  {
+    "first": "timesvd",
+    "second": "als",
+    "role": "primary",
+    "metric": "ndcg@10",
+    "difference": -0.0006895136439371611,
+    "ci95_low": -0.003892950162327744,
+    "ci95_high": 0.0023850386954185642,
+    "n_users": 1702,
+    "n_bootstrap": 2000,
+    "seed": 2026
+  },
+  {
+    "first": "timesvd",
+    "second": "svdpp",
+    "role": "exploratory",
+    "metric": "ndcg@10",
+    "difference": -0.0021430135728810365,
+    "ci95_low": -0.0038742608176541462,
+    "ci95_high": -0.0007131663142191684,
+    "n_users": 1702,
+    "n_bootstrap": 2000,
+    "seed": 2026
+  },
+  {
+    "first": "fm",
+    "second": "fm_id",
+    "role": "exploratory",
+    "metric": "ndcg@10",
+    "difference": 0.00046433985436492324,
+    "ci95_low": -0.0004837271177389614,
+    "ci95_high": 0.0013706256462455786,
+    "n_users": 1702,
+    "n_bootstrap": 2000,
+    "seed": 2026
+  }
+]

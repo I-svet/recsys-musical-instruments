@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.png binary
+hw1/reports/** -text
+*.ipynb text eol=lf
