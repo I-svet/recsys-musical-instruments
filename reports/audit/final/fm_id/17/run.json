@@ -1,0 +1,71 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "fm_id",
+  "seed": 17,
+  "parameters": {
+    "rank": 16,
+    "lr": 0.00016652256321245668,
+    "reg": 0.012128490832219785,
+    "epochs": 4,
+    "batch_size": 4096
+  },
+  "validation": {
+    "ndcg@10": 0.015084211681400686,
+    "recall@10": 0.022579953427592912,
+    "precision@10": 0.00815450643776824,
+    "map@10": 0.00943822950019302,
+    "recall_all_future@10": 0.015328215752365348,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.0038204393505253103,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 862.7184120171673
+  },
+  "metrics": {
+    "ndcg@10": 0.013058531600493514,
+    "recall@10": 0.0193352149873889,
+    "precision@10": 0.00663924794359577,
+    "map@10": 0.008965539408085992,
+    "recall_all_future@10": 0.012008581292576476,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.003956883613044072,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 863.4236192714453,
+    "rmse": 1.1270100695885854
+  },
+  "fit_seconds": 1.1509890999877825,
+  "test_seconds": 0.9505368999671191,
+  "peak_rss_mib": 435.2265625,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [],
+  "training_history": [
+    {
+      "epoch": 1,
+      "mse": 0.9142150473819564
+    },
+    {
+      "epoch": 2,
+      "mse": 0.9114193804083178
+    },
+    {
+      "epoch": 3,
+      "mse": 0.9087464493501113
+    },
+    {
+      "epoch": 4,
+      "mse": 0.906069214597708
+    }
+  ],
+  "files": {
+    "model.pkl": "19a15d29d3cd973cada05577707678c493222c22dbd0ebed2b30e21c16cf0125",
+    "per_user.csv": "ffe5acb5ce0ab7c2310ea6148b2e8bd805ca105b95fa4f3b7c4770916f7045de",
+    "recommendations.csv": "6292d451f650a940171a0cbaee1638aca4f418a999f63402aa0cce99e94cba13"
+  }
+}

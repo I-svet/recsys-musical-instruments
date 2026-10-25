@@ -1,0 +1,59 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "timesvd",
+  "parameters": {
+    "rank": 32,
+    "lr": 0.006966577033939481,
+    "reg": 0.04313090182064109,
+    "temporal_reg": 0.04313090182064109,
+    "epochs": 50,
+    "bin_days": 90,
+    "batch_size": 4096
+  },
+  "seed": 42,
+  "best_epoch": 1,
+  "validation": {
+    "ndcg@10": 0.0031294488000309984,
+    "recall@10": 0.00526861193170206,
+    "precision@10": 0.0013304721030042916,
+    "map@10": 0.0018126546994572746,
+    "recall_all_future@10": 0.0034228612058800735,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.3117751398553691,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 144.38909871244635
+  },
+  "curve": [
+    {
+      "epoch": 1,
+      "ndcg": 0.0031294488000309984
+    },
+    {
+      "epoch": 2,
+      "ndcg": 0.002965031476037897
+    },
+    {
+      "epoch": 3,
+      "ndcg": 0.00147311235726387
+    },
+    {
+      "epoch": 4,
+      "ndcg": 0.0009021123497770812
+    },
+    {
+      "epoch": 5,
+      "ndcg": 0.0022838600657638913
+    },
+    {
+      "epoch": 6,
+      "ndcg": 0.0008779052331753887
+    }
+  ],
+  "fit_seconds": 7.808116999978665,
+  "validation_seconds": 7.38656620006077,
+  "peak_rss_mib": 546.6953125
+}

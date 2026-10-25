@@ -1,0 +1,9 @@
+{
+  "seed": 2026,
+  "users": [
+    10261,
+    5813,
+    2053
+  ],
+  "rule": "One user sampled per activity third, ordered by train interaction count then local user ID; test-positive cohort; independent of model scores."
+}

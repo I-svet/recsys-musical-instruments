@@ -1,0 +1,79 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "fm_id",
+  "seed": 2026,
+  "parameters": {
+    "rank": 16,
+    "lr": 0.00016652256321245668,
+    "reg": 0.012128490832219785,
+    "epochs": 6,
+    "batch_size": 4096
+  },
+  "validation": {
+    "ndcg@10": 0.015197415415573883,
+    "recall@10": 0.022170555958109604,
+    "precision@10": 0.00793991416309013,
+    "map@10": 0.010077651558159427,
+    "recall_all_future@10": 0.015076244865179946,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.003956883613044072,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 787.8770386266094
+  },
+  "metrics": {
+    "ndcg@10": 0.013083700551827877,
+    "recall@10": 0.018933041759128712,
+    "precision@10": 0.00663924794359577,
+    "map@10": 0.009156926447299119,
+    "recall_all_future@10": 0.011789928772479915,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.003956883613044072,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 851.5851938895418,
+    "rmse": 1.1254783645266617
+  },
+  "fit_seconds": 1.7487717000185512,
+  "test_seconds": 0.9338874999666587,
+  "peak_rss_mib": 434.3046875,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [],
+  "training_history": [
+    {
+      "epoch": 1,
+      "mse": 0.914231594766274
+    },
+    {
+      "epoch": 2,
+      "mse": 0.9114341621577983
+    },
+    {
+      "epoch": 3,
+      "mse": 0.9087651437576248
+    },
+    {
+      "epoch": 4,
+      "mse": 0.9060770046920326
+    },
+    {
+      "epoch": 5,
+      "mse": 0.9033525087739317
+    },
+    {
+      "epoch": 6,
+      "mse": 0.9005672420547058
+    }
+  ],
+  "files": {
+    "model.pkl": "5f122e29e5574c3b205b952c6b99fa80cd011f284f8a59401a36ec2ffb3b4c98",
+    "per_user.csv": "8298c0d40523321725b21b81366f62c9575854ffc44a0ea9721e1ef3e6203671",
+    "recommendations.csv": "d5eb03dcf747b5297bc93ebacfa7ac149aa2836442e98b56c5dff5fd51b7e578"
+  }
+}

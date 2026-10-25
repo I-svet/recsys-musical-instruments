@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "model": "popular",
+  "seed": 42,
+  "parameters": {},
+  "validation": {
+    "ndcg@10": 0.017115267182240552,
+    "recall@10": 0.025486873641380078,
+    "precision@10": 0.009785407725321889,
+    "map@10": 0.011509426732066216,
+    "recall_all_future@10": 0.017575081277133014,
+    "n_users": 2330,
+    "n_users_recommended": 3127,
+    "catalog_coverage@10": 0.0027288852503752218,
+    "n_users_all_future": 3127,
+    "positive_event_catalog_coverage": 0.6111327364733359,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 1041.3791845493563
+  },
+  "metrics": {
+    "ndcg@10": 0.012756616199951012,
+    "recall@10": 0.01822088180783833,
+    "precision@10": 0.00663924794359577,
+    "map@10": 0.009449316219502556,
+    "recall_all_future@10": 0.01112890207354708,
+    "n_users": 1702,
+    "n_users_recommended": 2493,
+    "catalog_coverage@10": 0.0030017737754127437,
+    "n_users_all_future": 2493,
+    "positive_event_catalog_coverage": 0.5737066567773039,
+    "fallback_fraction": 0.0,
+    "mean_recommended_popularity@10": 1058.3412455934194
+  },
+  "fit_seconds": 0.03820329997688532,
+  "test_seconds": 0.9484246000065468,
+  "peak_rss_mib": 449.45703125,
+  "fallback_users": 0,
+  "evaluated_users_including_outside": 2493,
+  "loss_history": [],
+  "training_history": [],
+  "files": {
+    "model.pkl": "0b5404e7794449d10d3e79eb8a3c4e345d0e3e6edfeadb636f184bc54a4fb158",
+    "per_user.csv": "fdb108434a19325e30645f8063e0222638d149945195d1d86cbacce367e88f29",
+    "recommendations.csv": "30a3293aebba97811839e28a3151df0eeb1f7353d4e34cb9927fd66b10d99e3e"
+  }
+}

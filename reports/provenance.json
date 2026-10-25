@@ -1,0 +1,534 @@
+{
+  "experiment_fingerprint": "8e6355b37dd663e40544648b53b98227f3a23893f12717e3e12725ca59eab2c0",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 197 Stepping 2, GenuineIntel",
+    "logical_cpus": 14,
+    "ram_gib": 31.5,
+    "versions": {
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "pandas": "2.3.3",
+      "torch": "2.14.1+cpu",
+      "matplotlib": "3.11.2",
+      "psutil": "7.2.2",
+      "threadpoolctl": "3.7.0"
+    },
+    "git_commit": "102cc18bc6f499abed5e19431a30c246bf70609d",
+    "git_dirty": false,
+    "code_sha256": "a129adf4f8fbeea221ae1761cff534375c8b525cd8d3b98ae934b962e63e8ed3",
+    "threadpools": [
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.34.106.0",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.31.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Haswell"
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "libiomp",
+        "version": null
+      },
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 1,
+        "prefix": "libiomp",
+        "version": null
+      }
+    ],
+    "device": "cpu"
+  },
+  "config": {
+    "protocol": "global-time-train-5core-v1",
+    "k": 10,
+    "threads": 4,
+    "batch_size": 128,
+    "patience": 5,
+    "tuning_seed": 42,
+    "seeds": [
+      17,
+      42,
+      2026
+    ],
+    "bootstrap_seed": 2026,
+    "bootstrap_replicates": 2000,
+    "ablations": true,
+    "search": {
+      "popular": [
+        {}
+      ],
+      "knn": [
+        {
+          "k": 20,
+          "gamma": 0
+        },
+        {
+          "k": 20,
+          "gamma": 10
+        },
+        {
+          "k": 20,
+          "gamma": 50
+        },
+        {
+          "k": 20,
+          "gamma": 100
+        },
+        {
+          "k": 50,
+          "gamma": 0
+        },
+        {
+          "k": 50,
+          "gamma": 10
+        },
+        {
+          "k": 50,
+          "gamma": 50
+        },
+        {
+          "k": 50,
+          "gamma": 100
+        },
+        {
+          "k": 100,
+          "gamma": 0
+        },
+        {
+          "k": 100,
+          "gamma": 10
+        },
+        {
+          "k": 100,
+          "gamma": 50
+        },
+        {
+          "k": 100,
+          "gamma": 100
+        },
+        {
+          "k": 200,
+          "gamma": 0
+        },
+        {
+          "k": 200,
+          "gamma": 10
+        },
+        {
+          "k": 200,
+          "gamma": 50
+        },
+        {
+          "k": 200,
+          "gamma": 100
+        }
+      ],
+      "als": [
+        {
+          "rank": 32,
+          "reg": 10,
+          "bias_reg": 10,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 0.18964351378165806,
+          "bias_reg": 63.880795579977914,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 0.5812727788733253,
+          "bias_reg": 0.010236214181119512,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.2458280334270931,
+          "bias_reg": 99.00034984050052,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.6757579947367374,
+          "bias_reg": 32.055255285591144,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 1.6511865103642018,
+          "bias_reg": 29.43751400209291,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 50.691189288884445,
+          "bias_reg": 0.8255813314880652,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 3.0848835992852086,
+          "bias_reg": 0.7588593502644122,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 0.40580862146362023,
+          "bias_reg": 98.37143321930529,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 0.013565539016589736,
+          "bias_reg": 4.193443915443824,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 1.1093462626001058,
+          "bias_reg": 20.169449345693057,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 7.346387132242643,
+          "bias_reg": 70.61198153818842,
+          "epochs": 40
+        },
+        {
+          "rank": 32,
+          "reg": 0.3023535662717986,
+          "bias_reg": 0.060026972725840816,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 14.965196416069746,
+          "bias_reg": 0.09802806854251682,
+          "epochs": 40
+        },
+        {
+          "rank": 64,
+          "reg": 7.618869476838435,
+          "bias_reg": 0.03463046720412469,
+          "epochs": 40
+        },
+        {
+          "rank": 16,
+          "reg": 13.606669400388308,
+          "bias_reg": 45.71561490818504,
+          "epochs": 40
+        }
+      ],
+      "ease": [
+        {
+          "reg": 1
+        },
+        {
+          "reg": 3
+        },
+        {
+          "reg": 10
+        },
+        {
+          "reg": 30
+        },
+        {
+          "reg": 100
+        },
+        {
+          "reg": 300
+        },
+        {
+          "reg": 1000
+        },
+        {
+          "reg": 3000
+        }
+      ],
+      "fm": [
+        {
+          "rank": 32,
+          "lr": 0.005,
+          "reg": 0.0001,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0052480888049872285,
+          "reg": 3.2597496887736745e-06,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.00016652256321245668,
+          "reg": 0.012128490832219785,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.004076353156032138,
+          "reg": 0.09960488079455578,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.00270913532977755,
+          "reg": 3.507466410791727e-05,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0010297160863280612,
+          "reg": 0.005632924778250233,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.004077052349708586,
+          "reg": 0.0007543644302930306,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.005869651259981634,
+          "reg": 0.017706953225300675,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.003977443373209451,
+          "reg": 0.00032321987904800065,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.008343387692416908,
+          "reg": 0.010416808879087164,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0013051968308529572,
+          "reg": 0.03438199801852155,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0008050843954261885,
+          "reg": 0.0670410823915503,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0001962082928871104,
+          "reg": 0.038229928782113995,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.00012283387498162934,
+          "reg": 0.0005398126893043736,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.000883012918103241,
+          "reg": 4.529824738713253e-06,
+          "epochs": 50,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0010361050333746603,
+          "reg": 8.954400964428115e-05,
+          "epochs": 50,
+          "batch_size": 4096
+        }
+      ],
+      "timesvd": [
+        {
+          "rank": 32,
+          "lr": 0.005,
+          "reg": 0.0001,
+          "temporal_reg": 0.001,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0017497186056901403,
+          "reg": 1.3074430577343114e-05,
+          "temporal_reg": 0.00012678701610728397,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0009562544530735541,
+          "reg": 0.00017712267512696916,
+          "temporal_reg": 0.00017712267512696916,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.002793984223488632,
+          "reg": 0.00036977515956754015,
+          "temporal_reg": 0.00036977515956754015,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0005334386324187579,
+          "reg": 0.017336896211339926,
+          "temporal_reg": 0.017336896211339926,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0006256001349075279,
+          "reg": 0.0010019042871247778,
+          "temporal_reg": 0.0010019042871247778,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.00842268413717684,
+          "reg": 0.006747324783625084,
+          "temporal_reg": 0.006747324783625084,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0008195825277594868,
+          "reg": 4.074424417636997e-06,
+          "temporal_reg": 0.00022234644084417632,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0007347399647606316,
+          "reg": 0.0002480073376480185,
+          "temporal_reg": 0.0002480073376480185,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.006966577033939481,
+          "reg": 0.04313090182064109,
+          "temporal_reg": 0.04313090182064109,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0008228319684859747,
+          "reg": 0.01435537730879805,
+          "temporal_reg": 0.01435537730879805,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0009084321552522529,
+          "reg": 0.06860233901445678,
+          "temporal_reg": 0.06860233901445678,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 32,
+          "lr": 0.0014497061607491525,
+          "reg": 2.8896360439808093e-06,
+          "temporal_reg": 0.04580276521964759,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0005182046002432777,
+          "reg": 2.201314999305449e-05,
+          "temporal_reg": 2.201314999305449e-05,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        },
+        {
+          "rank": 64,
+          "lr": 0.0010219809035595115,
+          "reg": 0.0009787732312980292,
+          "temporal_reg": 0.0009787732312980292,
+          "epochs": 50,
+          "bin_days": 30,
+          "batch_size": 4096
+        },
+        {
+          "rank": 16,
+          "lr": 0.0005649530690262978,
+          "reg": 5.529444366780938e-06,
+          "temporal_reg": 0.06224758489300692,
+          "epochs": 50,
+          "bin_days": 90,
+          "batch_size": 4096
+        }
+      ]
+    }
+  },
+  "source": {
+    "name": "Musical_Instruments.csv",
+    "url": "https://mcauleylab.ucsd.edu/public_datasets/data/amazon_v2/categoryFilesSmall/Musical_Instruments.csv",
+    "bytes": 63130088,
+    "sha256": "8933b17434e4984bcce8cf4ec43d847e0af6aa6d46add28bbb37b80e06da1b06"
+  }
+}
